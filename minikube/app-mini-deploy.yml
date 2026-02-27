@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: todo-app
-        image: triple3a/todo-app-img:latest  # Replace with your Docker image
+        image: todo-app-app:latest  
         ports:
         - containerPort: 5000
         env:
