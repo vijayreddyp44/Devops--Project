@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 # Database connection info with environment variables
 db_connection = pymysql.connect(
-    host=os.environ.get('DB_HOST', 'localhost'),
+    host=os.environ.get('DB_HOST', 'db'),
     user=os.environ.get('DB_USER', 'root'),
     password=os.environ.get('DB_PASSWORD', 'password'),
     database=os.environ.get('DB_DATABASE', 'todo_db'),
